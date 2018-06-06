@@ -1,0 +1,17 @@
+<!--Main Container-->
+<main role="main" class="container m-top-56">
+  <h1 class="border-bottom-5 text-uppercase">OUR GALLERY</h1>
+  <div class="row" *ngFor="let item of photoList;let i = index">
+    <h3 class="col-12 pt-2">{{item.projectTitle}}</h3>
+    <div class="col" *ngFor="let img of item.image;let i = index">      
+      <div class="card">
+        <img class="card-img-top card-image" src="../../../assets/images/project1/g6.jpg" alt="Project 1">
+        <div class="card-img-overlay card-overlay">
+          <h5 class="card-title">{{img.imageTitle}}</h5>
+          <p class="card-text">{{img.imageDesc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
